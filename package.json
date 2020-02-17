@@ -3,11 +3,9 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "web": "expo start --web",
     "postinstall": "jetify"
   },
   "dependencies": {
-    "expo": "~36.0.0",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "~0.61.4",
@@ -19,15 +17,14 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@types/react": "~16.9.0",
+    "@types/react-native": "~0.60.23",
     "babel-jest": "~24.9.0",
+    "babel-preset-expo": "~8.0.0",
     "jest": "~24.9.0",
     "jetifier": "~1.6.4",
     "metro-react-native-babel-preset": "~0.56.0",
     "react-test-renderer": "~16.9.0",
-    "@types/react": "~16.9.0",
-    "@types/react-native": "~0.60.23",
-    "babel-preset-expo": "~8.0.0",
-    "expo": "^36.0.2",
     "typescript": "~3.6.3"
   },
   "private": true
