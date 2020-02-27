@@ -4,7 +4,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "postinstall": "jetify && cd ios && pod install && cd -",
-    "xcode": "open ./ios/myapp.xcworkspace || open ./ios/myapp.xcodeproj"
+    "xcode": "open ./ios/my-app.xcworkspace || open ./ios/my-app.xcodeproj"
   },
   "dependencies": {
     "react": "~16.9.0",
