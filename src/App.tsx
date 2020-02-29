@@ -1,33 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import LoginButton from './components/button';
-import LoginInput from './components/input'
-
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Login } from './pages/LoginPage'
+const Stack = createStackNavigator();
 export default function App() {
   return (
-    <View style={styles.container}>
-      <LoginInput
-        placeholder='email'
-        onChangeText={()=> {
-          console.log('changeme')
-        }}
-        keyboardType="email-address"
-      />
-      <LoginInput
-        secureTextEntry={true}
-        placeholder='password'
-        onChangeText={()=> {
-          console.log('changeme')
-        }}
-      />
-      <LoginButton onPress={this.onPressLoginButton}>
-        <Text >Login</Text>
-      </LoginButton>
-    </View>
-
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ title: 'Welcome' }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-
 }
+
 
 
 
