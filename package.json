@@ -2,9 +2,9 @@
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios --scheme myapp",
+    "ios": "react-native run-ios --scheme thisisatest",
     "postinstall": "jetify && cd ios && pod install && cd -",
-    "xcode": "open ./ios/myapp.xcworkspace || open ./ios/myapp.xcodeproj"
+    "xcode": "open ./ios/thisisatest.xcworkspace || open ./ios/thisisatest.xcodeproj"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.6",
